@@ -1,0 +1,41 @@
+put(K, V) –
+新增key及value的值，如果已經存在，就會直接取代舊值。
+
+putAll() –
+把另一個指定的map內的所有key及value的值加入現在的map。
+
+putIfAbsent(K, V) -
+新增key及value的值，如果已經存在，就沒有改動。
+
+get(K) –
+返回key的value值，如果key不存在，就會直接返回null值。
+
+getOrDefault(K, defaultValue) -
+返回key的value值，如果key不存在，就會直接返回defaultValue的值。
+
+containsKey(K) –
+檢查key是否存在於map內。.
+
+containsValue(V) -
+檢查value是否存在於map內。
+
+replace(K, V) –
+取代value的值。
+
+replace(K, oldValue, newValue) -
+取代value的舊值。
+
+remove(K) –
+刪除key及對應的value.
+
+remove(K, V) -
+刪除key及對應的value.
+
+keySet() -
+返回map內的所有key值。
+
+values() -
+返回map內的所有value值。
+
+entrySet() -
+返回map內的所有key和value值。

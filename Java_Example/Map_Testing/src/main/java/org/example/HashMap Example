@@ -1,0 +1,32 @@
+package org.example;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Main {
+    public static void main(String[] args) {
+        // choose "HashMap" to create a new Map Component
+        Map<String, Integer> testingMapObject = new HashMap<>();
+
+        //Increase element to Map Component
+        testingMapObject.put("One", 1);
+        testingMapObject.put("Two", 2);
+
+        //Print all  elements in Map , and element's Key and Value
+        System.out.println("Map : " + testingMapObject);
+        System.out.println("Keys : " + testingMapObject.keySet());
+        System.out.println("Values : " + testingMapObject.values());
+        System.out.println("Entries : " + testingMapObject.entrySet());
+        System.out.println("Contain 2 ?" + testingMapObject.entrySet());
+
+        //Delete a element in Map , then print it's value out
+        int value = testingMapObject.remove("Two");
+        System.out.println("Removed Value : " + value);
+
+        //Check Map Object for specific element's Key
+        System.out.println("Contain 2 ? " +
+                testingMapObject.containsKey("Two"));
+        testingMapObject.putIfAbsent("One", 2);
+
+    }
+}
